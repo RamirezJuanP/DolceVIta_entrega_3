@@ -1,0 +1,957 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+tipografias
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+**/
+
+
+.container-grid{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+
+/*clases del index.html*/
+
+/**clases de la navbar**/
+header {
+    background-color: #FFFFFF;
+    padding: 3.2px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*grid-area: header;*/
+}
+
+header div a img {
+    width: 56px; /* Cambia este valor al ancho deseado */
+    height: 56px /* Cambia este valor al largo deseado */
+}
+
+.navBar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.navBar li a{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #8C7E7E;
+}
+
+.navBar li a:hover{
+    color: #D70D6E;
+    text-shadow: 2px 2px 10px #D70D6E;
+}
+
+
+
+/**.imagenCarrito {
+    width: 480px; /* Cambia este valor al ancho deseado */
+    /**height: 240px; /* Cambia este valor al largo deseado */
+
+
+
+
+
+
+/**clases del footer**/
+footer {
+    background-color: #D9D9D9;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin: 3px 10px;
+}
+
+footer div a img {
+    width: 30px; /* Cambia este valor al ancho deseado */
+    height: 30px; /* Cambia este valor al largo deseado */
+    margin: 0px 10px;
+}
+
+footer section h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin: 7px 0px 0px 5px;
+}
+
+footer div dl dt {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+footer div dl dd {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 11.2px;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+main {
+    background-color: #F1F1EF;
+    grid-area: main;
+}
+
+
+
+
+
+
+
+/*****************  codigo css de index  *****************/
+/*clases del index.html*/
+
+/**clases del main Index**/
+.sectionPrincipalIndex {
+    width: 100%;
+    height: 480px   ;
+    background-image: url("https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1984&q=80");
+    background-position: 50% 25%; /** para centrar de la imagen **/
+    text-align: center;
+    background-repeat: no-repeat; /** no se repita la imagen **/
+    background-size: cover; /** me abarque todo el ancho **/
+    margin-bottom: .625rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evely;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sectionPrincipalIndex div h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 160px;
+    color: #ffffff;
+    padding: 4.8px;
+}
+
+.sectionPrincipalIndex div h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 96px;
+    color: #ffffff;
+    padding: 5px;
+}
+.sectionPrincipalIndex button {
+    background-color: #D70D6E;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px;
+    font-size: 16px; /* Cambia el tamaño del texto dentro del botón */
+    margin: 10.4px 20.8px;
+}
+
+.sectionPrincipalIndex button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sectionSecundariaIndex div button {
+    background-color: #D70D6E;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: .625rem; 
+    padding: .625rem 1.25rem;
+    font-size: 1rem; /* Cambia el tamaño del texto dentro del botón */
+    margin-bottom: 2rem;
+}
+
+.sectionSecundariaIndex div button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sectionSecundariaIndex div img {
+    width: 25rem; /* Cambia este valor al ancho deseado */
+    height: 15.625rem; /* Cambia este valor al largo deseado */
+    margin-top: 3rem;
+}
+
+.sectionSecundariaIndex {
+    display: grid;
+    grid-template-areas: 
+    "img-1 img-2 img-3 img-4"
+    "boton-1 boton-2 boton-3 boton-4"
+    ;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-1 {
+    grid-area: img-1;
+    justify-self: center;
+    align-self: center;
+}
+.img-2 {
+    grid-area: img-2;
+    justify-self: center;
+    align-self: center;  
+}
+
+.img-3 {
+    grid-area: img-3;
+    justify-self: center;
+    align-self: center;  
+}
+
+.img-4 {
+    grid-area: img-4;
+    justify-self: center;
+    align-self: center;  
+}
+
+.boton-1 {
+    grid-area: boton-1;
+    justify-self: center;
+    align-self: center;
+}
+
+.boton-2 {
+    grid-area: boton-2;
+    justify-self: center;
+    align-self: center;
+}
+
+.boton-3 {
+    grid-area: boton-3;   
+    justify-self: center;
+    align-self: centar;
+}
+.boton-4 {
+    grid-area: boton-4;   
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+/*****************  codigo css de nosotros  *****************/
+/**clases del main Nosotros**/
+
+.sectionPrincipalNosotros h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: left;
+    color: #D70D6E;
+    padding-top: 5px;
+    padding-left: .3125rem;
+    margin-left: 10px;
+}
+
+.sectionPrincipalNosotros h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3.125rem;
+    text-align: left;
+    color: #D70D6E;
+    margin-left: 10px;
+}
+
+.sectionPrincipalNosotros p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    color: black;
+    margin: 1rem;
+}
+
+.sectionPrincipalNosotros img{
+    width: 65%; /* Cambia este valor al ancho deseado */
+    /*height: 270px;  Cambia este valor al largo deseado */
+    margin: 10px;
+}
+
+.sectionSecundariaNosotros img{
+    width: 50%;
+    margin: 10px 0px;
+}
+
+.sectionSecundariaNosotros h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3.125rem;
+    text-align: right;
+    color: #D70D6E;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.sectionSecundariaNosotros p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.875rem;
+    text-align: right;
+    color: black;
+    margin-right: 10px;
+}
+
+.sectionPrincipalNosotros {
+    margin: 3rem 5rem;
+    display: grid;
+    grid-template-areas:
+    "titulo . imagen"
+    "parrafo parrafo imagen"
+    ;
+    gap: 0rem .625rem;
+}
+
+.sectionPrincipalNosotros div{
+    grid-area: titulo;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.sectionPrincipalNosotros p{
+    grid-area: parrafo;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.sectionPrincipalNosotros img{
+    grid-area: imagen;
+    justify-self: center;
+    align-self: center;
+}
+
+.sectionSecundariaNosotros {
+    margin: 2rem 5rem;
+    display: grid;
+    grid-template-areas:
+    "foto . titulo-h2"
+    "foto p p"
+    ;
+    gap: 0rem .625rem
+}
+
+.sectionSecundariaNosotros h2{
+    grid-area: titulo-h2;
+    justify-self: end;
+    align-self: center;
+}
+
+.sectionSecundariaNosotros p{
+    grid-area: p;
+    justify-self: end;
+    align-self: center;
+}
+
+.sectionSecundariaNosotros img{
+    grid-area: foto;
+    justify-self: center;
+    align-self: center;
+}
+
+
+/*****************  codigo css de contactanos  *****************/
+/**clases del main Contactanos**/
+
+
+.tituloFormulario h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #D70D6E;
+    padding: 10px;
+}
+
+form fieldset legend {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #D70D6E;
+    /**margin: 0px 10px 15px 10px;**/
+}
+
+form {
+    margin: 0rem 5rem 3rem 5rem;
+
+}
+
+.informacion div img {
+    width: 50px; /* Cambia este valor al ancho deseado */
+    height: 50px; /* Cambia este valor al largo deseado */
+    margin-top: 16px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.informacion div h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #D70D6E;
+    padding-left: .3125rem;
+}
+
+.informacion div p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: black;
+    padding-left: .3125rem;
+}
+
+.mapa {
+    text-align: center;
+}
+
+.mapa iframe {
+    border: 1px solid black;
+    width: 28.125rem;
+    height: 28rem;
+    margin: 2rem;
+    padding: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    background-color: #ccc;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #D70D6E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    align-self: center ;
+}
+
+.tituloFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset {
+    border: 0px;
+    border-top: 1px solid #000000;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 0rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem
+}
+fieldset label {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+    align-items: start;
+}
+
+.informacion {
+    display: grid;
+    grid-template-areas: 
+    "correo telefono"
+    "mapa mapa"
+    ;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem 5rem 3rem 5rem;
+    gap: 15px;
+}
+
+.correo {
+    grid-area: correo;
+    justify-self: center;
+    align-self: center;
+}
+
+.correo {
+    grid-area: telefono;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.mapa {
+    grid-area: mapa;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+/*****************  codigo css de catalogo  *****************/
+/**clases del main Catalogo**/
+
+
+main h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #D70D6E;
+    margin:  0rem .5rem 0.5rem .5rem ;
+}
+
+.productosCatalogo div img {
+    width: 450px; /* Cambia este valor al ancho deseado */
+    height: 300px; /* Cambia este valor al largo deseado */
+    margin-left: 10px;
+}
+
+.productosCatalogo div button {
+    background-color: #D70D6E;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px;
+    font-size: 16px; /* Cambia el tamaño del texto dentro del botón */
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+
+.productosCatalogo div button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.productosCatalogo {
+    padding: 1rem 3rem 2.5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: .625rem
+}
+
+
+
+
+
+
+
+/*****************  codigo css de carritos  *****************/
+/**clases del main Carritos**/
+
+.productoCarrito img {
+    width: 600px; /* Cambia este valor al ancho deseado */
+    height: 400px; /* Cambia este valor al largo deseado */
+    margin: 10px;
+}
+
+.productoCarrito h2 {
+    text-align: right;
+    margin-right: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+    color: #B50057;
+    padding-right: 5px;
+}
+
+.carritoInformacion {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: black;    
+}
+
+.carritoPrecio {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.productoCarrito button{
+    background-color: #BF1E1E;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px; 
+    padding: 20px 30px;
+    font-size: 20px; /* Cambia el tamaño del texto dentro del botón */
+    margin-bottom: 10px;
+}
+
+.productoCarrito {
+    margin: 5rem 5rem 5rem 5rem;
+    display: grid;
+grid-template-areas: 
+"h2 h2"
+"img informacio-carrito"
+"button button"
+;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.productoCarrito h2{
+    grid-area: h2;
+    justify-self: center;
+    align-self: center;
+}
+
+.productoCarrito img{
+    grid-area: img;
+    justify-self: center;
+    align-self: center
+}
+
+.productoCarrito div{
+    grid-area: informacio-carrito;
+    justify-self: end;
+    align-items: end;
+}
+
+.productoCarrito button{
+    grid-area: button;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+
+
+/**HEADER mediaquery**/
+
+@media (max-width: 425px){
+    .navBar{
+        flex-direction: column;
+        justify-content: center;
+        gap: .3125rem;
+    }
+    .navBar li a{
+        font-size: 18px;
+    }
+    .carrito {
+        display: none;
+    }
+}
+
+/** FOOTER mediaquery **/
+
+
+@media (max-width: 425px){
+    .horario {
+        display: none;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        gap: .3125rem;
+        margin: .3125rem;
+        justify-content: center;
+    }
+}
+
+/*****  MAIN mediaquery *****/
+/*index*/
+
+
+@media (max-width: 1024px){
+    .sectionPrincipalIndex div h1 {
+        font-size: 7rem;
+    }
+    
+    .sectionPrincipalIndex div h2 {
+        font-size: 5rem;
+    }
+
+    .sectionSecundariaIndex {
+        grid-template-areas: 
+        "img-1 img-2"
+        "boton-1 boton-2"
+        "img-3 img-4"
+        "boton-3 boton-4"
+        ;
+        justify-content: center;
+        align-content: center;
+    }
+
+        .img-1 {
+            grid-area: img-1;
+        }
+        .img-2 {
+            grid-area: img-2;
+        }
+        .img-3 {
+            grid-area: img-3;
+        }
+        .img-4 {
+            grid-area: img-4;
+        }
+
+        .boton-1{
+            grid-area: boton-1;
+        }
+        .boton-2{
+            grid-area: boton-2;
+        }
+        .boton-3{
+            grid-area: boton-3;
+        }
+        .boton-4{
+            grid-area: boton-4;
+        }
+
+    .sectionSecundariaIndex div img {
+        width: 25rem; /* Cambia este valor al ancho deseado */
+        height: 19rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+    }
+    .sectionSecundariaIndex div button {
+        margin-bottom: 0rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    .sectionSecundariaIndex div img {
+        width: 21rem; /* Cambia este valor al ancho deseado */
+        height: 15rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .sectionSecundariaIndex div button {
+        margin-bottom: 0rem;
+    }
+}
+
+
+@media (max-width: 425px){
+    .sectionPrincipalIndex div h1 {
+        font-size: 70px;
+    }
+    
+    .sectionPrincipalIndex div h2 {
+        font-size: 45px;
+    }
+
+    .sectionSecundariaIndex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: .625rem;
+    }
+
+    .sectionSecundariaIndex div img {
+        width: 22rem; /* Cambia este valor al ancho deseado */
+        height: 15.1.rem;
+    }
+}
+
+@media (max-width: 375px){
+    .sectionSecundariaIndex div img {
+        width: 18rem; /* Cambia este valor al ancho deseado */
+        height: 13rem;
+    }
+}
+
+@media (max-width: 320px){
+    .sectionSecundariaIndex {
+        margin-bottom: 0rem;
+        gap: 0rem;
+    }
+
+    .sectionPrincipalIndex div h1 {
+        font-size: 50px;
+    }
+    
+    .sectionPrincipalIndex div h2 {
+        font-size: 35px;
+    }
+
+    .sectionSecundariaIndex div img {
+        width: 16rem; /* Cambia este valor al ancho deseado */
+        height: 11  rem;
+    }
+}
+
+
+
+
+
+/*contactanos*/
+@media (max-width: 1440px){
+    .sectionPrincipalNosotros img{
+        width: 20rem;
+    }
+
+    .sectionSecundariaNosotros img{
+        width: 16rem;
+    }
+}
+
+@media (max-width: 1440px){
+    .sectionPrincipalNosotros h3 {
+        font-size: 1.2rem;
+    }
+    
+    .sectionPrincipalNosotros h2{
+        font-size: 2.25rem;
+    }
+    
+    .sectionPrincipalNosotros p{
+        font-size: 1.35rem;
+
+    }
+    
+    .sectionSecundariaNosotros h2{
+        font-size: 2.25rem;
+    }
+    
+    .sectionSecundariaNosotros p{
+        font-size: 1.35rem;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .sectionPrincipalNosotros img{
+        width: 18rem;
+    }
+
+    .sectionPrincipalNosotros h3 {
+        font-size: 0.75rem;
+    }
+    
+    .sectionPrincipalNosotros h2{
+        font-size: 2rem;
+    }
+    
+    .sectionPrincipalNosotros p{
+        font-size: 1rem;
+    }
+    
+    .sectionSecundariaNosotros h2{
+        font-size: 2rem;
+    }
+    
+    .sectionSecundariaNosotros p{
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 425px){
+    .sectionPrincipalNosotros{
+        margin: 1.5rem 1.5rem 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionPrincipalNosotros img{
+        width: 25rem;
+    }
+
+    .sectionPrincipalNosotros h3 {
+        font-size: 1rem;
+    }
+    
+    .sectionPrincipalNosotros h2{
+        font-size: 2.25rem;
+    }
+    .sectionPrincipalNosotros p{
+        font-size: 1.25rem;
+    }
+
+    .sectionSecundariaNosotros{
+        margin: 1.5rem 1.5rem 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .sectionSecundariaNosotros img{
+        display: none;
+    }
+
+    .sectionSecundariaNosotros p{
+        font-size: 1.25rem;
+        justify-self: center;
+        align-self: center;
+    }
+
+}
+
+
+@media (max-width: 320px){
+    .sectionPrincipalNosotros p{
+        font-size: 1.5rem;
+    }
+    .sectionSecundariaNosotros p{
+        font-size: 1.5rem;
+    }
+}
