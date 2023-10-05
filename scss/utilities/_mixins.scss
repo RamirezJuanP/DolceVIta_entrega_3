@@ -1,0 +1,60 @@
+@mixin flex($direction, $justify, $alignContent, $alignItems, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-content: $alignContent;
+    align-items: $alignItems;
+    gap: $gap;
+}
+
+
+@mixin grid($col, $row, $area, $jusContent, $aliContent, $jusitems, $alitems, $gap){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-template-areas: $area;
+    justify-content: $jusContent;
+    align-content: $aliContent;
+    justify-items: $jusitems;
+    align-items: $alitems;
+}
+
+@mixin objGrid($gridArea, $juself, $aliself){
+    grid-area: $gridArea;
+    justify-self: $juself;
+    align-self: $aliself;
+}
+
+
+@mixin font-Noto($weight, $size, $align, $color){
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    text-align: $align;
+    color: $color;
+}
+
+@mixin font-Rubik($weight, $size, $align, $color){
+    font-family: 'Rubik', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    text-align: $align;
+    color: $color;
+}
+
+@mixin box-modeling($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}
+
+
+@mixin boton{
+    background-color: #D70D6E;
+    border: none;
+    border-radius: .625rem;
+}
+
+@mixin textBoton($decoration, $color){
+    text-decoration: $decoration;
+    color: $color;
+}

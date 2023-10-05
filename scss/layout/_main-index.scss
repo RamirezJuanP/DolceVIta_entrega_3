@@ -1,0 +1,72 @@
+@import "../components/botones";
+/** Main index **/
+
+main {
+    background-color: #F1F1EF;
+    .sectionPrincipalIndex{
+        width: 100%;
+        height: 30rem;
+        background-image: url("https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1984&q=80");
+        background-position: 50% 25%; 
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: .625rem;
+        @include flex(column, center, space-evenly, none, 1rem);
+        div{
+            h1{
+                @include font-Noto(700, 10rem, none, #FFFFFF);
+                @include box-modeling(.3rem, none);
+            }
+            h2{
+                @include font-Noto(500, 6rem, none, #FFFFFF);
+                @include box-modeling(.3125rem, none);
+            }
+        }
+    }
+    .sectionSecundariaIndex{
+        @include grid(none, none, "img-1 img-2 img-3 img-4" "boton-1 boton-2 boton-3 boton-4", center, center, none, center, 2rem);
+        div{
+            img{
+                width: 100%;
+                height: 40vh;
+                @include box-modeling(1rem, 0)
+            }
+        }
+        .img-1 {
+            @include objGrid(img-1, center, center)
+        }
+        .img-2 {
+            @extend .img-1;
+            grid-area: img-2;
+        }
+        
+        .img-3 {
+            @extend .img-1;
+            grid-area: img-3;
+        }
+        
+        .img-4 {
+            @extend .img-1;
+            grid-area: img-4; 
+        }
+        
+        .boton-1 {
+            @include objGrid(boton-1, center, center)
+        }
+        
+        .boton-2 {
+            @extend .boton-1;
+            grid-area: boton-2;
+        }
+        
+        .boton-3 {
+            @extend .boton-1;
+            grid-area: boton-3;
+        }
+        .boton-4 {
+            @extend .boton-1;
+            grid-area: boton-4;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/** Botones index **/
+
+main{
+    .sectionPrincipalIndex{
+        div{
+            button{
+                @include boton;
+                @include box-modeling(.625rem 1.25rem, .65rem 1.3rem);
+                a{
+                    text-decoration: none;
+                    @include font-Rubik(600, 1rem, none, #FFFFFF);
+                }
+            }
+        }
+    }
+    .sectionSecundariaIndex{
+        div{
+            button{
+                @include boton;
+                @include box-modeling(.625rem 1.25rem, 2rem);
+                a{
+                    text-decoration: none;
+                    @include font-Rubik(600, 1rem, none, #FFFFFF);
+                }
+            }
+        }
+    }}
+

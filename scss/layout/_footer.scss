@@ -1,0 +1,36 @@
+footer {
+    background-color: #D9D9D9;
+    margin-top: .625rem;
+    @include flex(row, space-evenly, none, center, none);
+    div{
+        p{
+            @include box-modeling(none, .1875rem .625rem);
+            @include font-Rubik(400, 1rem, none, #000000);
+        }
+    }
+    div{
+        a{
+            img{
+                width: 1.875rem;
+                height: 1.875rem;
+                @include box-modeling(none, 0 .625rem)
+            }
+        }
+    }
+    .horario{
+        h3{
+            @include font-Rubik(500, 1rem, none, #000000);
+            @include box-modeling(none, .4375rem 0 0 .3125rem)
+        }
+        dl{
+            dt{
+                @include font-Rubik(400, 1rem, none, #000000);
+                @include box-modeling(none, 0rem 0 .125rem .625rem)
+            }
+            dd{
+                @include font-Rubik(400, .7rem, none, #000000);
+                @include box-modeling(none, 0rem 0 .625rem .625rem)
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+/** primeros e llama todo lo que corresponda a utilities **/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+
+
+
+
+/**segundo se llama a todo lo que corresponda a base**/
+@import "./base/reset";
+
+
+
+/** tercerose llama a todo lo que corresponda a layout **/
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main-index";
+
+
+
+
+
+
