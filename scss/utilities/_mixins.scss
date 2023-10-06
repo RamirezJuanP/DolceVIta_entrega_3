@@ -17,6 +17,7 @@
     align-content: $aliContent;
     justify-items: $jusitems;
     align-items: $alitems;
+    gap: $gap
 }
 
 @mixin objGrid($gridArea, $juself, $aliself){

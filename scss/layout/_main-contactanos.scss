@@ -1,0 +1,83 @@
+/** Main Contactanos **/
+
+main{
+    .formulario{
+        @include flex(column, center, none, none, .3125rem);
+        h2{
+            @include font-Noto(700, 3.75rem, none, #D70D6E);
+            @include box-modeling(.625rem, none)
+        }
+        form{
+            @include box-modeling(none, 0 5rem 1rem 5rem);
+            fieldset{
+                border: 0px;
+                border-top: 1px solid #000000;
+                @include box-modeling(1.25rem, 1.25rem 3rem 0 3rem);
+                @include flex(column, none, none, flex-start, none);
+                legend{
+                    @include font-Noto(500, 1.875rem, none, #D70D6E)
+                }
+                label {
+                    @include font-Noto(400, 1rem, none, #000000);
+                    align-items: start
+                }
+                input[type="text"]{
+                    background-color: #cccccc;
+                    width: 100%;
+                    border: .0625rem solid #cecece;
+                    border-radius: .3125rem;
+                    @include box-modeling(.625rem, 0 0 .9375rem 0)
+                }
+                input[type="email"]{
+                    @extend input[type="text"];
+                }
+                input[type="number"]{
+                    @extend input[type="text"];
+                }
+                input[type="submit"]{
+                    background-color: #D70D6E;
+                    color: #fff;
+                    padding: .625rem 1.25rem;
+                    border: none;
+                    border-radius: .5rem;
+                    align-self: center ;
+                }
+            }
+        }
+    }
+    .informacion{
+        @include grid(1fr 1fr, 1/6fr 5/6fr, "correo telefono" "mapa mapa", none, none, center, center, .9375rem);
+        @include box-modeling(none, 0 5rem 0 5rem);
+        .correo{
+            @include objGrid(correo, center, center);
+            img{
+                width: 3rem;
+                height: 3rem;
+                @include box-modeling(none, 1rem 0 .3125rem .3125rem)
+            }
+            h2{
+                @include font-Noto(400, 2.5rem, none, #D70D6E);
+                @include box-modeling(0 0 0 .3125rem, none)
+            }
+            p{
+                @extend h2;
+                font-size: 1.5rem;
+                color: #000000;
+            }
+        }
+        .telefono{
+            @extend .correo;
+            grid-area: telefono;
+        }
+        .mapa{
+            @include objGrid(mapa, center, center);
+            text-align: center;
+            iframe{
+                border: .0625rem solid black;
+                width: 28.125rem;
+                height: 28rem;
+                @include box-modeling(.9375rem, 2rem)
+            }
+        }
+    }
+}

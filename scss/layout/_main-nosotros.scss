@@ -1,0 +1,48 @@
+main{
+    .sectionPrincipalNosotros{
+        @include box-modeling(2rem 0 0 0, 0 5rem 3rem 5rem);
+        @include grid(1fr 1fr 1fr, 6/7fr 1/7fr, "titulo . imagen" "parrafo parrafo imagen", none, none, none, none, 0rem .625rem);
+        div{
+            @include objGrid(titulo, start, center);
+            h3{
+                @include font-Noto(500, 1.25rem, left, #D70D6E);
+                @include box-modeling(2rem 0 0 .3125rem, 0 0 0 .625rem)
+            }
+            h2{
+                @extend h3;
+                font-weight: 700;
+                font-size: 3.125rem;
+                padding: 0;
+            }
+        }
+        p{
+            @include objGrid(parrafo, start, center);
+            @include font-Noto(400, 1.875rem, none, #000000);
+            @include box-modeling(none, 1rem)
+        }
+        img{
+            @include objGrid(imagen, center, center);
+            width: 100%;
+            @include box-modeling(none, .625rem)
+        }
+    }
+    .sectionSecundariaNosotros{
+        @include box-modeling (0 0 2rem 0, 2rem 5rem 0 5rem);
+        @include grid(1fr 1fr 1fr, 6/7fr 1/7fr, "foto . titulo-h2" "foto p p", none, none, none, none, 0rem .625rem);
+        img{
+            @include objGrid(foto, center, center);
+            width: 80%;
+            @include box-modeling(none, .625rem 0)
+        }
+        h2{
+            @include objGrid(titulo-h2, end, center);
+            @include font-Noto(700, 3.125rem, right, #D70D6E);
+            @include box-modeling(.625rem, 0 .625rem 0 0)
+        }
+        p{
+            @include objGrid(p, end, center);
+            @include font-Noto(500, 1.875rem, right, #000000);
+            @include box-modeling(none, 0 .625rem 0 0)
+        }
+    }
+}

@@ -1,7 +1,7 @@
 @import "../components/botones";
 /** Main index **/
 
-main {
+main{
     background-color: #F1F1EF;
     .sectionPrincipalIndex{
         width: 100%;
@@ -16,11 +16,11 @@ main {
         div{
             h1{
                 @include font-Noto(700, 10rem, none, #FFFFFF);
-                @include box-modeling(.3rem, none);
+                @include box-modeling(.3rem, none)
             }
             h2{
                 @include font-Noto(500, 6rem, none, #FFFFFF);
-                @include box-modeling(.3125rem, none);
+                @include box-modeling(.3125rem, none)
             }
         }
     }
