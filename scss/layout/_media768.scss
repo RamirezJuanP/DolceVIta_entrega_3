@@ -1,0 +1,45 @@
+/** 768 **/
+/*index*/
+
+@media (max-width: 768px){
+    main{
+        .sectionPrincipalIndex{
+            h1{
+                font-size: 6rem;
+            }
+            h2{
+                font-size: 4rem;
+            }
+        }
+
+        .sectionSecundariaIndex{
+        grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4";
+            div{
+                img{
+                    height: 40vh;
+                }
+            }
+        }
+    }
+}
+
+/* carrito */
+@media (max-width: 768px){
+    main{
+        .productoCarrito{
+            h2{
+                font-size: 4rem;
+            }
+            img{
+                width: 75%;
+            }
+            div{
+                article{
+                    .carritoInformacion{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,13 @@
 header{
+    width: 100%;
     background-color: #FFFFFF;
     padding: .2rem 1rem;
     @include flex(row, space-between, none, center, none);
     div{
         a{
             img {
-            width: 56px; /* Cambia este valor al ancho deseado */
-            height: 56px /* Cambia este valor al largo deseado */
+            width: 3.5rem; /* Cambia este valor al ancho deseado */
+            height: 3.5rem /* Cambia este valor al largo deseado */
             }
         }
     }

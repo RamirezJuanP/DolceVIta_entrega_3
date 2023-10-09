@@ -1,0 +1,47 @@
+/** 320 **/
+/*index*/
+
+@media (max-width: 320px){
+    main{
+        .sectionPrincipalIndex{
+            h1{
+                font-size: 3.5rem;
+            }
+            h2{
+                font-size: 2.25rem;
+            }
+        }
+        .sectionSecundariaIndex{
+            div{
+                img{
+                    height: 35vh;
+                }
+            }
+            div{
+                button{
+                    margin: 0 0 .5rem 0;
+                }
+            }
+        }
+    }
+}
+
+
+/* carrito */
+@media (max-width: 320px){
+    main{
+        .productoCarrito{
+            margin: 0 1.5rem;
+            h2{
+                font-size: 3rem;
+            }
+            div{
+                article{
+                    .carritoInformacion{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

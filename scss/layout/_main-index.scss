@@ -1,19 +1,16 @@
-@import "../components/botones";
 /** Main index **/
 
 main{
     background-color: #F1F1EF;
     .sectionPrincipalIndex{
-        width: 100%;
-        height: 30rem;
-        background-image: url("https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1984&q=80");
-        background-position: 50% 25%; 
-        text-align: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-bottom: .625rem;
-        @include flex(column, center, space-evenly, none, 1rem);
-        div{
+            width: 100%;
+            background-image: url("https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1984&q=80");
+            background-position: 50% 25%; 
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: .625rem;
+            @include flex(column, center, space-evenly, none, 1rem);
             h1{
                 @include font-Noto(700, 10rem, none, #FFFFFF);
                 @include box-modeling(.3rem, none)
@@ -22,15 +19,35 @@ main{
                 @include font-Noto(500, 6rem, none, #FFFFFF);
                 @include box-modeling(.3125rem, none)
             }
-        }
+            div{
+                button{
+                    @include boton;
+                    @include box-modeling(.65rem 1.25rem, 1rem 1.3rem 2rem 1.3rem);
+                    a{
+                        text-decoration: none;
+                        @include font-Rubik(600, 1rem, none, #FFFFFF);
+                    }
+                }
+            }
+
     }
     .sectionSecundariaIndex{
-        @include grid(none, none, "img-1 img-2 img-3 img-4" "boton-1 boton-2 boton-3 boton-4", center, center, none, center, 2rem);
+        @include grid(none, none, "img-1 img-2 img-3 img-4" "boton-1 boton-2 boton-3 boton-4", center, center, none, center, 0 2rem);
         div{
             img{
                 width: 100%;
                 height: 40vh;
                 @include box-modeling(1rem, 0)
+            }
+        }
+        div{
+            button{
+                @include boton;
+                @include box-modeling(.625rem 1.25rem, 1rem 2rem 2rem 2rem);
+                a{
+                    text-decoration: none;
+                    @include font-Rubik(600, 1rem, none, #FFFFFF);
+                }
             }
         }
         .img-1 {

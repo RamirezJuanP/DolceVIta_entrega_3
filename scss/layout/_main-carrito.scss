@@ -1,0 +1,41 @@
+/** Main Carrito **/
+
+main{
+    .productoCarrito{
+        @include box-modeling(none, 0 5rem);
+        @include grid(none, none, "h2 h2" "img informacio-carrito" "button button", center, none, center, none, 2rem);
+        h2{
+            @include font-Noto(500, 7rem, right, #B50057);
+            @include box-modeling(0 .3125rem, 0 .625rem);
+            @include objGrid(h2, center, center)
+        }
+        img{
+            width: 100%;
+            @include box-modeling(none, .625rem);
+            @include objGrid(img, center, center)
+        }
+        div{
+            @include objGrid(informacio-carrito, center, center);
+            article{
+                .carritoInformacion{
+                    @include font-Noto(400, 3.5rem, right, #000000)
+                }
+                .carritoPrecio{
+                    @extend .carritoInformacion;
+                    font-weight: 500;
+                    font-size: 4rem;
+                    @include box-modeling(0 0 .3125rem 0, none)
+                }
+            }
+        }
+        button{
+            @include objGrid(button, center, center);
+            @include font-Rubik(600, 1.25rem, none, #FFFFFF);
+            @include box-modeling(1.25rem 1.875rem, 0 0 2rem 0);
+            background-color: #BF1E1E;
+            text-decoration: none;
+            border: none;
+            border-radius: .625rem;
+        }
+    }
+}

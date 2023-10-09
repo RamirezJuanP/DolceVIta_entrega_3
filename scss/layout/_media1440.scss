@@ -1,0 +1,48 @@
+/******** mediaquery ********/
+/** 1440 **/
+/* index*/
+
+@media (max-width: 1440px){
+    main{
+        .sectionPrincipalIndex{
+            h1{
+                font-size: 7rem;
+            }
+            h2{
+                font-size: 5rem;
+            }
+        }
+        .sectionSecundariaIndex{
+            gap: 0;
+        }
+    }
+}
+
+/* carrito */
+@media (max-width: 1440px){
+    main{
+        .productoCarrito{
+            @include flex(column, center, center, center, 2rem);
+            h2{
+                font-size: 5.5rem;
+                text-align: center;
+                justify-self: center;
+            }
+            img{
+                width: 75%;
+                justify-self: center;
+            }
+            div{
+                article{
+                    .carritoInformacion{
+                        font-size: 3rem;
+                        text-align: center;
+                    }
+                    .carritoPrecio{
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

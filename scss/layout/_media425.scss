@@ -1,0 +1,84 @@
+/** 425 **/
+/*header*/
+@media (max-width: 600px){
+    header{
+        nav{
+            .navBar{
+                @include flex(column, center, none, none, .3125rem);
+                li{
+                    a{
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        div{
+            a{
+                .carrito{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*footer*/
+@media (max-width: 600px){
+    footer{
+        div{
+            @include flex(column, center, none, none, .3125rem);
+            @include box-modeling(.3rem, none)
+        }
+        .horario{
+            display: none;
+        }
+    }
+}
+
+
+/*index*/
+@media (max-width: 425px){
+    main{
+        .sectionPrincipalIndex{
+            h1{
+                font-size: 4.375rem;
+            }
+            h2{
+                font-size: 2.8125rem;
+            }
+        }
+        .sectionSecundariaIndex{
+            @include flex(column, center, center, center, 0.5rem);
+        }
+    }
+}
+
+
+/* carrito */
+@media (max-width: 425px){
+    main{
+        .productoCarrito{
+            gap: 1rem;
+            margin: 0 2rem;
+            h2{
+                font-size: 4rem;
+            }
+            img{
+                width: 100%;
+            }
+            div{
+                article{
+                    .carritoInformacion{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
