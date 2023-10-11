@@ -24,3 +24,20 @@
         }
     }
 }
+
+/* nosotros */
+@media (max-width: 375px){
+    main{
+        .sectionPrincipalNosotros{
+            gap: 0;
+            p{
+                font-size: 1rem;
+            }
+        }
+        .sectionSecundariaNosotros{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}

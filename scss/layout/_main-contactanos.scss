@@ -1,24 +1,26 @@
+$color-titulo: #D70D6E;
+$color-letra: #000000;
 /** Main Contactanos **/
 
 main{
     .formulario{
         @include flex(column, center, none, none, .3125rem);
         h2{
-            @include font-Noto(700, 3.75rem, none, #D70D6E);
+            @include font-Noto(700, 3.75rem, none, $color-titulo);
             @include box-modeling(.625rem, none)
         }
         form{
             @include box-modeling(none, 0 5rem 1rem 5rem);
             fieldset{
                 border: 0px;
-                border-top: 1px solid #000000;
+                border-top: 1px solid $color-letra;
                 @include box-modeling(1.25rem, 1.25rem 3rem 0 3rem);
                 @include flex(column, none, none, flex-start, none);
                 legend{
-                    @include font-Noto(500, 1.875rem, none, #D70D6E)
+                    @include font-Noto(500, 1.875rem, none, $color-titulo)
                 }
                 label {
-                    @include font-Noto(400, 1rem, none, #000000);
+                    @include font-Noto(400, 1rem, none, $color-letra);
                     align-items: start
                 }
                 input[type="text"]{
@@ -35,7 +37,7 @@ main{
                     @extend input[type="text"];
                 }
                 input[type="submit"]{
-                    background-color: #D70D6E;
+                    background-color: $color-titulo;
                     color: #fff;
                     padding: .625rem 1.25rem;
                     border: none;
@@ -56,13 +58,13 @@ main{
                 @include box-modeling(none, 1rem 0 .3125rem .3125rem)
             }
             h2{
-                @include font-Noto(400, 2.5rem, none, #D70D6E);
+                @include font-Noto(400, 2.5rem, none, $color-titulo);
                 @include box-modeling(0 0 0 .3125rem, none)
             }
             p{
                 @extend h2;
                 font-size: 1.5rem;
-                color: #000000;
+                color: $color-letra;
             }
         }
         .telefono{
@@ -73,7 +75,7 @@ main{
             @include objGrid(mapa, center, center);
             text-align: center;
             iframe{
-                border: .0625rem solid black;
+                border: .0625rem solid $color-letra;
                 width: 28.125rem;
                 height: 28rem;
                 @include box-modeling(.9375rem, 2rem)

@@ -82,3 +82,35 @@
         }
     }
 }
+
+/* nosotros */
+@media (max-width: 425px){
+    main{
+        .sectionPrincipalNosotros{
+            @include box-modeling(1rem 0 0 0, 0 1.5rem 2rem 1.5rem);
+            @include flex(column, none, none, none, .5rem);
+            div{
+                h3{
+                    text-align: center;
+                }
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        .sectionSecundariaNosotros{
+            @include box-modeling(0 0 1rem 0, 1rem 1.5rem 0 1.5rem);
+            @include flex(column, center, none, none, 1rem);
+            img{
+                display: none
+            }
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

@@ -133,7 +133,7 @@ main {
         font-weight: 600;
         font-size: 1rem;
         text-align: none;
-        color: #FFFFFF; }
+        color: #ffffff; }
   main .sectionSecundariaIndex {
     display: grid;
     grid-template-columns: none;
@@ -189,7 +189,7 @@ main .sectionPrincipalNosotros {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 6/7fr 1/7fr;
-  grid-template-areas: "titulo . imagen" "parrafo parrafo imagen";
+  grid-template-areas: "titulo titulo imagen" "parrafo parrafo imagen";
   justify-content: none;
   align-content: none;
   justify-items: none;
@@ -221,12 +221,12 @@ main .sectionPrincipalNosotros {
     text-align: none;
     color: #000000;
     padding: none;
-    margin: 1rem; }
+    margin: 1rem 0; }
   main .sectionPrincipalNosotros img {
     grid-area: imagen;
     justify-self: center;
     align-self: center;
-    width: 100%;
+    width: 80%;
     padding: none;
     margin: 0.625rem; }
 
@@ -236,7 +236,7 @@ main .sectionSecundariaNosotros {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 6/7fr 1/7fr;
-  grid-template-areas: "foto . titulo-h2" "foto p p";
+  grid-template-areas: "foto titulo-h2 titulo-h2" "foto p p";
   justify-content: none;
   align-content: none;
   justify-items: none;
@@ -246,7 +246,7 @@ main .sectionSecundariaNosotros {
     grid-area: foto;
     justify-self: center;
     align-self: center;
-    width: 80%;
+    width: 60%;
     padding: none;
     margin: 0.625rem 0; }
   main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
@@ -258,7 +258,7 @@ main .sectionSecundariaNosotros {
     font-size: 3.125rem;
     text-align: right;
     color: #D70D6E;
-    padding: 0.625rem;
+    padding: 0 0.625rem;
     margin: 0 0.625rem 0 0; }
   main .sectionSecundariaNosotros p {
     grid-area: p;
@@ -370,7 +370,7 @@ main .informacion {
     align-self: center;
     text-align: center; }
     main .informacion .mapa iframe {
-      border: .0625rem solid black;
+      border: 0.0625rem solid #000000;
       width: 28.125rem;
       height: 28rem;
       padding: 0.9375rem;
@@ -515,6 +515,14 @@ main .productoCarrito {
     main .productoCarrito div article .carritoPrecio {
       font-size: 3.5rem; } }
 
+/* nosotros */
+@media (max-width: 1440px) {
+  main .sectionPrincipalNosotros img {
+    width: 100%; }
+  main .sectionSecundariaNosotros img {
+    width: 80%;
+    height: none; } }
+
 /** 1024 **/
 /*index*/
 @media (max-width: 1024px) {
@@ -533,6 +541,30 @@ main .productoCarrito {
     width: 100%; }
   main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
     font-size: 3rem; } }
+
+/* nosotros */
+@media (max-width: 1024px) {
+  main .sectionPrincipalNosotros {
+    padding: none;
+    margin: 0 2rem 2rem 2rem; }
+    main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+      padding: 0;
+      font-size: .85rem; }
+    main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+      font-size: 2.5rem; }
+    main .sectionPrincipalNosotros p {
+      font-size: 1.5rem; }
+    main .sectionPrincipalNosotros img {
+      width: 100%; }
+  main .sectionSecundariaNosotros {
+    padding: none;
+    margin: 0 2rem; }
+    main .sectionSecundariaNosotros img {
+      width: 100%; }
+    main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+      font-size: 2.5rem; }
+    main .sectionSecundariaNosotros p {
+      font-size: 1.5rem; } }
 
 /** 768 **/
 /*index*/
@@ -554,6 +586,19 @@ main .productoCarrito {
     width: 75%; }
   main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
     font-size: 2.5rem; } }
+
+/* nosotros */
+@media (max-width: 768px) {
+  main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+    font-size: 1rem; }
+  main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+    font-size: 2.25rem; }
+  main .sectionPrincipalNosotros p {
+    font-size: 1.25rem; }
+  main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+    font-size: 2.25rem; }
+  main .sectionSecundariaNosotros p {
+    font-size: 1.25rem; } }
 
 /** 425 **/
 /*header*/
@@ -612,6 +657,39 @@ main .productoCarrito {
     main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
       font-size: 2rem; } }
 
+/* nosotros */
+@media (max-width: 425px) {
+  main .sectionPrincipalNosotros {
+    padding: 1rem 0 0 0;
+    margin: 0 1.5rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-content: none;
+    align-items: none;
+    gap: 0.5rem; }
+    main .sectionPrincipalNosotros div {
+      text-align: center; }
+      main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+        text-align: center; }
+    main .sectionPrincipalNosotros p {
+      text-align: center; }
+  main .sectionSecundariaNosotros {
+    padding: 0 0 1rem 0;
+    margin: 1rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: none;
+    align-items: none;
+    gap: 1rem; }
+    main .sectionSecundariaNosotros img {
+      display: none; }
+    main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+      text-align: center; }
+    main .sectionSecundariaNosotros p {
+      text-align: center; } }
+
 /** 375 **/
 /*index*/
 @media (max-width: 375px) {
@@ -624,6 +702,15 @@ main .productoCarrito {
 @media (max-width: 375px) {
   main .productoCarrito h2, main .productoCarrito .informacion .correo p, main .informacion .correo .productoCarrito p, main .productoCarrito .informacion .telefono p, main .informacion .telefono .productoCarrito p {
     font-size: 3rem; } }
+
+/* nosotros */
+@media (max-width: 375px) {
+  main .sectionPrincipalNosotros {
+    gap: 0; }
+    main .sectionPrincipalNosotros p {
+      font-size: 1rem; }
+  main .sectionSecundariaNosotros p {
+    font-size: 1rem; } }
 
 /** 320 **/
 /*index*/
@@ -645,3 +732,16 @@ main .productoCarrito {
       font-size: 3rem; }
     main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
       font-size: 2rem; } }
+
+/* nosotros */
+@media (max-width: 320px) {
+  main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+    font-size: .75; }
+  main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+    font-size: 1.80rem; }
+  main .sectionPrincipalNosotros p {
+    font-size: 1rem; }
+  main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+    font-size: 1.80rem; }
+  main .sectionSecundariaNosotros p {
+    font-size: 1rem; } }

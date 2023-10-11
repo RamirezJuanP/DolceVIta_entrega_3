@@ -39,3 +39,39 @@
         }
     }
 }
+
+/* nosotros */
+@media (max-width: 1024px){
+    main{
+        .sectionPrincipalNosotros{
+            @include box-modeling(none, 0 2rem 2rem 2rem);
+            div{
+                h3{
+                    padding: 0;
+                    font-size: .85rem;
+                }
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .sectionSecundariaNosotros{
+            @include box-modeling(none, 0 2rem);
+            img{
+                width: 100%;
+            }
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

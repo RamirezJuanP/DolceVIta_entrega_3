@@ -1,3 +1,4 @@
+$color-letra: #000000;
 /** Main Carrito **/
 
 main{
@@ -18,7 +19,7 @@ main{
             @include objGrid(informacio-carrito, center, center);
             article{
                 .carritoInformacion{
-                    @include font-Noto(400, 3.5rem, right, #000000)
+                    @include font-Noto(400, 3.5rem, right, $color-letra)
                 }
                 .carritoPrecio{
                     @extend .carritoInformacion;

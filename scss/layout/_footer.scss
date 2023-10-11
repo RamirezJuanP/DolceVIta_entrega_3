@@ -1,11 +1,14 @@
+$background-footer: #D9D9D9;
+$color-letra: #000000;
+
 footer {
-    background-color: #D9D9D9;
+    background-color: $background-footer;
     margin-top: 0rem;
     @include flex(row, space-evenly, none, center, none);
     div{
         p{
             @include box-modeling(none, .1875rem .625rem);
-            @include font-Rubik(400, 1rem, none, #000000);
+            @include font-Rubik(400, 1rem, none, $color-letra);
         }
     }
     div{
@@ -19,16 +22,16 @@ footer {
     }
     .horario{
         h3{
-            @include font-Rubik(500, 1rem, none, #000000);
+            @include font-Rubik(500, 1rem, none, $color-letra);
             @include box-modeling(none, .4375rem 0 0 .3125rem)
         }
         dl{
             dt{
-                @include font-Rubik(400, 1rem, none, #000000);
+                @include font-Rubik(400, 1rem, none, $color-letra);
                 @include box-modeling(none, 0rem 0 .125rem .625rem)
             }
             dd{
-                @include font-Rubik(400, .7rem, none, #000000);
+                @include font-Rubik(400, .7rem, none, $color-letra);
                 @include box-modeling(none, 0rem 0 .625rem .625rem)
             }
         }

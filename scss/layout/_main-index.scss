@@ -1,7 +1,9 @@
+$letra-boton: #ffffff;
+
 /** Main index **/
 
 main{
-    background-color: #F1F1EF;
+    background-color: $background-main;
     .sectionPrincipalIndex{
             width: 100%;
             background-image: url("https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1984&q=80");
@@ -25,7 +27,7 @@ main{
                     @include box-modeling(.65rem 1.25rem, 1rem 1.3rem 2rem 1.3rem);
                     a{
                         text-decoration: none;
-                        @include font-Rubik(600, 1rem, none, #FFFFFF);
+                        @include font-Rubik(600, 1rem, none, $letra-boton);
                     }
                 }
             }

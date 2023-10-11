@@ -45,3 +45,30 @@
         }
     }
 }
+
+/* nosotros */
+@media (max-width: 320px){
+    main{
+        .sectionPrincipalNosotros{
+            div{
+                h3{
+                    font-size: .75;
+                }
+                h2{
+                    font-size: 1.80rem;
+                }
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .sectionSecundariaNosotros{
+            h2{
+                font-size: 1.80rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}

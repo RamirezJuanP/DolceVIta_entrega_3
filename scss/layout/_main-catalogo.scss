@@ -1,8 +1,9 @@
+$color-titulo: #D70D6E;
 /**Main Catalogo **/
 
 main{
     h2{
-        @include font-Noto(500, 1.75rem, none, #D70D6E);
+        @include font-Noto(500, 1.75rem, none, $color-titulo);
         @include box-modeling(none, 0 .5rem .5rem .5rem)
     }
     .productosCatalogo{
