@@ -1,4 +1,5 @@
-$color-titulo: #D70D6E;
+@import "../utilities/variables";
+
 /**Main Catalogo **/
 
 main{
@@ -21,7 +22,7 @@ main{
                 @include box-modeling(.625rem 1.25rem, 0 0 .75rem .3125rem);
                 a{
                     text-decoration: none;
-                    @include font-Rubik(600, 1rem, none, #FFFFFF);
+                    @include font-Rubik(600, 1rem, none, $letra-boton);
                 }
             }
         }

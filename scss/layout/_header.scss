@@ -1,6 +1,8 @@
+@import "../utilities/variables";
+
 header{
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: $background-header;
     padding: .2rem 1rem;
     @include flex(row, space-between, none, center, none);
     div{
@@ -18,7 +20,7 @@ header{
             a{
                 text-transform: capitalize;
                 text-decoration: none;
-                @include font-Rubik(400, 1.5625rem, none, #8C7E7E);
+                @include font-Rubik(400, 1.5625rem, none, $letra-navBar);
                 &:hover{
                     color: #D70D6E;
                     text-shadow: 2px 2px 10px #D70D6E;

@@ -1,4 +1,4 @@
-$letra-boton: #ffffff;
+@import "../utilities/variables";
 
 /** Main index **/
 
@@ -14,11 +14,11 @@ main{
             margin-bottom: .625rem;
             @include flex(column, center, space-evenly, none, 1rem);
             h1{
-                @include font-Noto(700, 10rem, none, #FFFFFF);
+                @include font-Noto(700, 10rem, none, $titutlo-index);
                 @include box-modeling(.3rem, none)
             }
             h2{
-                @include font-Noto(500, 6rem, none, #FFFFFF);
+                @include font-Noto(500, 6rem, none, $titutlo-index);
                 @include box-modeling(.3125rem, none)
             }
             div{
@@ -34,6 +34,7 @@ main{
 
     }
     .sectionSecundariaIndex{
+        @include box-modeling(none, 0 2rem);
         @include grid(none, none, "img-1 img-2 img-3 img-4" "boton-1 boton-2 boton-3 boton-4", center, center, none, center, 0 2rem);
         div{
             img{
@@ -48,7 +49,7 @@ main{
                 @include box-modeling(.625rem 1.25rem, 1rem 2rem 2rem 2rem);
                 a{
                     text-decoration: none;
-                    @include font-Rubik(600, 1rem, none, #FFFFFF);
+                    @include font-Rubik(600, 1rem, none, $letra-boton);
                 }
             }
         }

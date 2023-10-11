@@ -63,7 +63,7 @@ footer {
     height: 1.875rem;
     padding: none;
     margin: 0 0.625rem; }
-  footer .horario h3, footer .horario main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div footer .horario h2, footer .horario main .sectionPrincipalNosotros div .informacion .correo p, main .sectionPrincipalNosotros div .informacion .correo footer .horario p, footer .horario main .informacion .correo .sectionPrincipalNosotros div p, main .informacion .correo .sectionPrincipalNosotros div footer .horario p, footer .horario main .sectionPrincipalNosotros div .informacion .telefono p, main .sectionPrincipalNosotros div .informacion .telefono footer .horario p, footer .horario main .informacion .telefono .sectionPrincipalNosotros div p, main .informacion .telefono .sectionPrincipalNosotros div footer .horario p {
+  footer .horario h3, footer .horario main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div footer .horario h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 1rem;
@@ -113,7 +113,7 @@ main {
       color: #FFFFFF;
       padding: 0.3rem;
       margin: none; }
-    main .sectionPrincipalIndex h2, main .sectionPrincipalIndex .informacion .correo p, main .informacion .correo .sectionPrincipalIndex p, main .sectionPrincipalIndex .informacion .telefono p, main .informacion .telefono .sectionPrincipalIndex p {
+    main .sectionPrincipalIndex h2 {
       font-family: 'Noto Sans', sans-serif;
       font-weight: 500;
       font-size: 6rem;
@@ -135,6 +135,8 @@ main {
         text-align: none;
         color: #ffffff; }
   main .sectionSecundariaIndex {
+    padding: none;
+    margin: 0 2rem;
     display: grid;
     grid-template-columns: none;
     grid-template-rows: none;
@@ -161,7 +163,7 @@ main {
         font-weight: 600;
         font-size: 1rem;
         text-align: none;
-        color: #FFFFFF; }
+        color: #ffffff; }
     main .sectionSecundariaIndex .img-1, main .sectionSecundariaIndex .img-2, main .sectionSecundariaIndex .img-3, main .sectionSecundariaIndex .img-4 {
       grid-area: img-1;
       justify-self: center;
@@ -183,6 +185,7 @@ main {
     main .sectionSecundariaIndex .boton-4 {
       grid-area: boton-4; }
 
+/** Main nosotros **/
 main .sectionPrincipalNosotros {
   padding: 2rem 0 0 0;
   margin: 0 5rem 3rem 5rem;
@@ -199,7 +202,7 @@ main .sectionPrincipalNosotros {
     grid-area: titulo;
     justify-self: start;
     align-self: center; }
-    main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+    main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
       font-family: 'Noto Sans', sans-serif;
       font-weight: 500;
       font-size: 1.25rem;
@@ -207,7 +210,7 @@ main .sectionPrincipalNosotros {
       color: #D70D6E;
       padding: 2rem 0 0 0.3125rem;
       margin: 0 0 0 0.625rem; }
-    main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+    main .sectionPrincipalNosotros div h2 {
       font-weight: 700;
       font-size: 3.125rem;
       padding: 0; }
@@ -249,7 +252,7 @@ main .sectionSecundariaNosotros {
     width: 60%;
     padding: none;
     margin: 0.625rem 0; }
-  main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+  main .sectionSecundariaNosotros h2 {
     grid-area: titulo-h2;
     justify-self: end;
     align-self: center;
@@ -280,7 +283,7 @@ main .formulario {
   align-content: none;
   align-items: none;
   gap: 0.3125rem; }
-  main .formulario h2, main .formulario .informacion .correo p, main .informacion .correo .formulario p, main .formulario .informacion .telefono p, main .informacion .telefono .formulario p {
+  main .formulario h2 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 3.75rem;
@@ -345,23 +348,34 @@ main .informacion {
   main .informacion .correo, main .informacion .telefono {
     grid-area: correo;
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 0; }
     main .informacion .correo img, main .informacion .telefono img {
       width: 3rem;
       height: 3rem;
       padding: none;
       margin: 1rem 0 0.3125rem 0.3125rem; }
-    main .informacion .correo h2, main .informacion .telefono h2, main .informacion .correo p, main .informacion .telefono p {
+    main .informacion .correo h2, main .informacion .telefono h2 {
       font-family: 'Noto Sans', sans-serif;
       font-weight: 400;
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-align: none;
       color: #D70D6E;
       padding: 0 0 0 0.3125rem;
       margin: none; }
     main .informacion .correo p, main .informacion .telefono p {
-      font-size: 1.5rem;
-      color: #000000; }
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      font-size: 2.5rem;
+      text-align: none;
+      color: #000000;
+      padding: 0 0 0 0.3125rem;
+      margin: none; }
   main .informacion .telefono {
     grid-area: telefono; }
   main .informacion .mapa {
@@ -370,14 +384,14 @@ main .informacion {
     align-self: center;
     text-align: center; }
     main .informacion .mapa iframe {
-      border: 0.0625rem solid #000000;
+      border: .0625rem solid #000000;
       width: 28.125rem;
       height: 28rem;
       padding: 0.9375rem;
       margin: 2rem; }
 
 /**Main Catalogo **/
-main h2, main .informacion .correo p, main .informacion .telefono p {
+main h2 {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
   font-size: 1.75rem;
@@ -418,7 +432,7 @@ main .productosCatalogo {
         font-weight: 600;
         font-size: 1rem;
         text-align: none;
-        color: #FFFFFF; }
+        color: #ffffff; }
 
 /** Main Carrito **/
 main .productoCarrito {
@@ -433,7 +447,7 @@ main .productoCarrito {
   justify-items: center;
   align-items: none;
   gap: 2rem; }
-  main .productoCarrito h2, main .productoCarrito .informacion .correo p, main .informacion .correo .productoCarrito p, main .productoCarrito .informacion .telefono p, main .informacion .telefono .productoCarrito p {
+  main .productoCarrito h2 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 500;
     font-size: 7rem;
@@ -488,7 +502,7 @@ main .productoCarrito {
 @media (max-width: 1440px) {
   main .sectionPrincipalIndex h1 {
     font-size: 7rem; }
-  main .sectionPrincipalIndex h2, main .sectionPrincipalIndex .informacion .correo p, main .informacion .correo .sectionPrincipalIndex p, main .sectionPrincipalIndex .informacion .telefono p, main .informacion .telefono .sectionPrincipalIndex p {
+  main .sectionPrincipalIndex h2 {
     font-size: 5rem; }
   main .sectionSecundariaIndex {
     gap: 0; } }
@@ -502,7 +516,7 @@ main .productoCarrito {
     align-content: center;
     align-items: center;
     gap: 2rem; }
-    main .productoCarrito h2, main .productoCarrito .informacion .correo p, main .informacion .correo .productoCarrito p, main .productoCarrito .informacion .telefono p, main .informacion .telefono .productoCarrito p {
+    main .productoCarrito h2 {
       font-size: 5.5rem;
       text-align: center;
       justify-self: center; }
@@ -528,7 +542,7 @@ main .productoCarrito {
 @media (max-width: 1024px) {
   main .sectionPrincipalIndex h1 {
     font-size: 7rem; }
-  main .sectionPrincipalIndex h2, main .sectionPrincipalIndex .informacion .correo p, main .informacion .correo .sectionPrincipalIndex p, main .sectionPrincipalIndex .informacion .telefono p, main .informacion .telefono .sectionPrincipalIndex p {
+  main .sectionPrincipalIndex h2 {
     font-size: 5rem; }
   main .sectionSecundariaIndex {
     grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4"; }
@@ -547,10 +561,10 @@ main .productoCarrito {
   main .sectionPrincipalNosotros {
     padding: none;
     margin: 0 2rem 2rem 2rem; }
-    main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+    main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
       padding: 0;
       font-size: .85rem; }
-    main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+    main .sectionPrincipalNosotros div h2 {
       font-size: 2.5rem; }
     main .sectionPrincipalNosotros p {
       font-size: 1.5rem; }
@@ -561,7 +575,7 @@ main .productoCarrito {
     margin: 0 2rem; }
     main .sectionSecundariaNosotros img {
       width: 100%; }
-    main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+    main .sectionSecundariaNosotros h2 {
       font-size: 2.5rem; }
     main .sectionSecundariaNosotros p {
       font-size: 1.5rem; } }
@@ -571,16 +585,18 @@ main .productoCarrito {
 @media (max-width: 768px) {
   main .sectionPrincipalIndex h1 {
     font-size: 6rem; }
-  main .sectionPrincipalIndex h2, main .sectionPrincipalIndex .informacion .correo p, main .informacion .correo .sectionPrincipalIndex p, main .sectionPrincipalIndex .informacion .telefono p, main .informacion .telefono .sectionPrincipalIndex p {
+  main .sectionPrincipalIndex h2 {
     font-size: 4rem; }
   main .sectionSecundariaIndex {
+    padding: none;
+    margin: 0 1rem;
     grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4"; }
     main .sectionSecundariaIndex div img {
       height: 40vh; } }
 
 /* carrito */
 @media (max-width: 768px) {
-  main .productoCarrito h2, main .productoCarrito .informacion .correo p, main .informacion .correo .productoCarrito p, main .productoCarrito .informacion .telefono p, main .informacion .telefono .productoCarrito p {
+  main .productoCarrito h2 {
     font-size: 4rem; }
   main .productoCarrito img {
     width: 75%; }
@@ -589,13 +605,13 @@ main .productoCarrito {
 
 /* nosotros */
 @media (max-width: 768px) {
-  main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+  main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
     font-size: 1rem; }
-  main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+  main .sectionPrincipalNosotros div h2 {
     font-size: 2.25rem; }
   main .sectionPrincipalNosotros p {
     font-size: 1.25rem; }
-  main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+  main .sectionSecundariaNosotros h2 {
     font-size: 2.25rem; }
   main .sectionSecundariaNosotros p {
     font-size: 1.25rem; } }
@@ -635,7 +651,7 @@ main .productoCarrito {
 @media (max-width: 425px) {
   main .sectionPrincipalIndex h1 {
     font-size: 4.375rem; }
-  main .sectionPrincipalIndex h2, main .sectionPrincipalIndex .informacion .correo p, main .informacion .correo .sectionPrincipalIndex p, main .sectionPrincipalIndex .informacion .telefono p, main .informacion .telefono .sectionPrincipalIndex p {
+  main .sectionPrincipalIndex h2 {
     font-size: 2.8125rem; }
   main .sectionSecundariaIndex {
     display: flex;
@@ -650,7 +666,7 @@ main .productoCarrito {
   main .productoCarrito {
     gap: 1rem;
     margin: 0 2rem; }
-    main .productoCarrito h2, main .productoCarrito .informacion .correo p, main .informacion .correo .productoCarrito p, main .productoCarrito .informacion .telefono p, main .informacion .telefono .productoCarrito p {
+    main .productoCarrito h2 {
       font-size: 4rem; }
     main .productoCarrito img {
       width: 100%; }
@@ -670,7 +686,7 @@ main .productoCarrito {
     gap: 0.5rem; }
     main .sectionPrincipalNosotros div {
       text-align: center; }
-      main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+      main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
         text-align: center; }
     main .sectionPrincipalNosotros p {
       text-align: center; }
@@ -685,7 +701,7 @@ main .productoCarrito {
     gap: 1rem; }
     main .sectionSecundariaNosotros img {
       display: none; }
-    main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+    main .sectionSecundariaNosotros h2 {
       text-align: center; }
     main .sectionSecundariaNosotros p {
       text-align: center; } }
@@ -695,12 +711,15 @@ main .productoCarrito {
 @media (max-width: 375px) {
   main .sectionPrincipalIndex h1 {
     font-size: 4rem; }
-  main .sectionPrincipalIndex h2, main .sectionPrincipalIndex .informacion .correo p, main .informacion .correo .sectionPrincipalIndex p, main .sectionPrincipalIndex .informacion .telefono p, main .informacion .telefono .sectionPrincipalIndex p {
-    font-size: 2.75rem; } }
+  main .sectionPrincipalIndex h2 {
+    font-size: 2.75rem; }
+  main .sectionSecundariaIndex {
+    padding: none;
+    margin: 0 0.5rem; } }
 
 /* carrito */
 @media (max-width: 375px) {
-  main .productoCarrito h2, main .productoCarrito .informacion .correo p, main .informacion .correo .productoCarrito p, main .productoCarrito .informacion .telefono p, main .informacion .telefono .productoCarrito p {
+  main .productoCarrito h2 {
     font-size: 3rem; } }
 
 /* nosotros */
@@ -717,7 +736,7 @@ main .productoCarrito {
 @media (max-width: 320px) {
   main .sectionPrincipalIndex h1 {
     font-size: 3.5rem; }
-  main .sectionPrincipalIndex h2, main .sectionPrincipalIndex .informacion .correo p, main .informacion .correo .sectionPrincipalIndex p, main .sectionPrincipalIndex .informacion .telefono p, main .informacion .telefono .sectionPrincipalIndex p {
+  main .sectionPrincipalIndex h2 {
     font-size: 2.25rem; }
   main .sectionSecundariaIndex div img {
     height: 35vh; }
@@ -728,20 +747,20 @@ main .productoCarrito {
 @media (max-width: 320px) {
   main .productoCarrito {
     margin: 0 1.5rem; }
-    main .productoCarrito h2, main .productoCarrito .informacion .correo p, main .informacion .correo .productoCarrito p, main .productoCarrito .informacion .telefono p, main .informacion .telefono .productoCarrito p {
+    main .productoCarrito h2 {
       font-size: 3rem; }
     main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
       font-size: 2rem; } }
 
 /* nosotros */
 @media (max-width: 320px) {
-  main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+  main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
     font-size: .75; }
-  main .sectionPrincipalNosotros div h2, main .sectionPrincipalNosotros div .informacion .correo p, main .informacion .correo .sectionPrincipalNosotros div p, main .sectionPrincipalNosotros div .informacion .telefono p, main .informacion .telefono .sectionPrincipalNosotros div p {
+  main .sectionPrincipalNosotros div h2 {
     font-size: 1.80rem; }
   main .sectionPrincipalNosotros p {
     font-size: 1rem; }
-  main .sectionSecundariaNosotros h2, main .sectionSecundariaNosotros .informacion .correo p, main .informacion .correo .sectionSecundariaNosotros p, main .sectionSecundariaNosotros .informacion .telefono p, main .informacion .telefono .sectionSecundariaNosotros p {
+  main .sectionSecundariaNosotros h2 {
     font-size: 1.80rem; }
   main .sectionSecundariaNosotros p {
     font-size: 1rem; } }

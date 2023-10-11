@@ -13,7 +13,8 @@
         }
 
         .sectionSecundariaIndex{
-        grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4";
+            @include box-modeling(none, 0 1rem);
+            grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4";
             div{
                 img{
                     height: 40vh;

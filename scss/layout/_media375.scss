@@ -11,6 +11,9 @@
                 font-size: 2.75rem;
             }
         }
+        .sectionSecundariaIndex{
+            @include box-modeling(none, 0 .5rem)
+        }
     }
 }
 

@@ -1,4 +1,5 @@
-$color-letra: #000000;
+@import "../utilities/variables";
+
 /** Main Carrito **/
 
 main{
@@ -6,7 +7,7 @@ main{
         @include box-modeling(none, 0 5rem);
         @include grid(none, none, "h2 h2" "img informacio-carrito" "button button", center, none, center, none, 2rem);
         h2{
-            @include font-Noto(500, 7rem, right, #B50057);
+            @include font-Noto(500, 7rem, right, $titulo-carrito);
             @include box-modeling(0 .3125rem, 0 .625rem);
             @include objGrid(h2, center, center)
         }
@@ -31,9 +32,9 @@ main{
         }
         button{
             @include objGrid(button, center, center);
-            @include font-Rubik(600, 1.25rem, none, #FFFFFF);
+            @include font-Rubik(600, 1.25rem, none, $letra-boton-carrito);
             @include box-modeling(1.25rem 1.875rem, 0 0 2rem 0);
-            background-color: #BF1E1E;
+            background-color: $boton-carrito;
             text-decoration: none;
             border: none;
             border-radius: .625rem;
