@@ -22,24 +22,6 @@
     }
 }
 
-/* carrito */
-@media (max-width: 1024px){
-    main{
-        .productoCarrito{
-            img{
-                width: 100%;
-            }
-            div{
-                article{
-                    .carritoInformacion{
-                        font-size: 3rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
 /* nosotros */
 @media (max-width: 1024px){
     main{
@@ -71,6 +53,51 @@
             }
             p{
                 font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 920px){
+    main{
+        .sectionPrincipalNosotros{
+            div{
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+            p{
+                font-size: 1.25rem;
+            }
+        }
+        .sectionSecundariaNosotros{
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+/* carrito */
+@media (max-width: 1024px){
+    main{
+        .productoCarrito{
+            gap: .80rem;
+            h2{
+                font-size: 4rem;
+            }
+            img{
+                width: 100%;
+            }
+            div{
+                article{
+                    .carritoInformacion{
+                        font-size: 2.75rem;
+                    }
+                }
             }
         }
     }

@@ -53,8 +53,35 @@
                 font-size: 2.8125rem;
             }
         }
-        .sectionSecundariaIndex{
-            @include flex(column, center, center, center, 0.5rem);
+    }
+}
+
+/* nosotros */
+@media (max-width: 425px){
+    main{
+        .sectionPrincipalNosotros{
+            div{
+                h3{
+                    font-size: 1rem;
+                }
+                h2{
+                    font-size: 2.25rem;
+                }
+            }
+            p{
+                font-size: 1.25rem;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .sectionSecundariaNosotros{
+            h2{
+                font-size: 2.25rem;
+            }
+            p{
+                font-size: 1.25rem;
+            }
         }
     }
 }
@@ -64,10 +91,10 @@
 @media (max-width: 425px){
     main{
         .productoCarrito{
-            gap: 1rem;
+            gap: 0;
             margin: 0 2rem;
             h2{
-                font-size: 4rem;
+                font-size: 3rem;
             }
             img{
                 width: 100%;
@@ -78,38 +105,6 @@
                         font-size: 2rem;
                     }
                 }
-            }
-        }
-    }
-}
-
-/* nosotros */
-@media (max-width: 425px){
-    main{
-        .sectionPrincipalNosotros{
-            @include box-modeling(1rem 0 0 0, 0 1.5rem 2rem 1.5rem);
-            @include flex(column, none, none, none, .5rem);
-            div{
-                h3{
-                    text-align: center;
-                }
-                text-align: center;
-            }
-            p{
-                text-align: center;
-            }
-        }
-        .sectionSecundariaNosotros{
-            @include box-modeling(0 0 1rem 0, 1rem 1.5rem 0 1.5rem);
-            @include flex(column, center, none, none, 1rem);
-            img{
-                display: none
-            }
-            h2{
-                text-align: center;
-            }
-            p{
-                text-align: center;
             }
         }
     }

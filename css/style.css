@@ -507,6 +507,26 @@ main .productoCarrito {
   main .sectionSecundariaIndex {
     gap: 0; } }
 
+/* nosotros */
+@media (max-width: 1440px) {
+  main .sectionPrincipalNosotros img {
+    width: 100%; }
+  main .sectionSecundariaNosotros img {
+    width: 80%;
+    height: none; } }
+
+@media (max-width: 1440px) {
+  main .sectionPrincipalNosotros div h1 {
+    font-size: 1rem; }
+  main .sectionPrincipalNosotros div h2 {
+    font-size: 3rem; }
+  main .sectionPrincipalNosotros p {
+    font-size: 1.5rem; }
+  main .sectionSecundariaNosotros h2 {
+    font-size: 3rem; }
+  main .sectionSecundariaNosotros p {
+    font-size: 1.5rem; } }
+
 /* carrito */
 @media (max-width: 1440px) {
   main .productoCarrito {
@@ -529,14 +549,6 @@ main .productoCarrito {
     main .productoCarrito div article .carritoPrecio {
       font-size: 3.5rem; } }
 
-/* nosotros */
-@media (max-width: 1440px) {
-  main .sectionPrincipalNosotros img {
-    width: 100%; }
-  main .sectionSecundariaNosotros img {
-    width: 80%;
-    height: none; } }
-
 /** 1024 **/
 /*index*/
 @media (max-width: 1024px) {
@@ -548,13 +560,6 @@ main .productoCarrito {
     grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4"; }
     main .sectionSecundariaIndex div img {
       height: 45vh; } }
-
-/* carrito */
-@media (max-width: 1024px) {
-  main .productoCarrito img {
-    width: 100%; }
-  main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
-    font-size: 3rem; } }
 
 /* nosotros */
 @media (max-width: 1024px) {
@@ -580,6 +585,27 @@ main .productoCarrito {
     main .sectionSecundariaNosotros p {
       font-size: 1.5rem; } }
 
+@media (max-width: 920px) {
+  main .sectionPrincipalNosotros div h2 {
+    font-size: 2.5rem; }
+  main .sectionPrincipalNosotros p {
+    font-size: 1.25rem; }
+  main .sectionSecundariaNosotros h2 {
+    font-size: 2.5rem; }
+  main .sectionSecundariaNosotros p {
+    font-size: 1.25rem; } }
+
+/* carrito */
+@media (max-width: 1024px) {
+  main .productoCarrito {
+    gap: .80rem; }
+    main .productoCarrito h2 {
+      font-size: 4rem; }
+    main .productoCarrito img {
+      width: 100%; }
+    main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
+      font-size: 2.75rem; } }
+
 /** 768 **/
 /*index*/
 @media (max-width: 768px) {
@@ -594,27 +620,60 @@ main .productoCarrito {
     main .sectionSecundariaIndex div img {
       height: 40vh; } }
 
-/* carrito */
-@media (max-width: 768px) {
-  main .productoCarrito h2 {
-    font-size: 4rem; }
-  main .productoCarrito img {
-    width: 75%; }
-  main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
-    font-size: 2.5rem; } }
+@media (max-width: 535px) {
+  main .sectionPrincipalIndex h1 {
+    font-size: 5rem; }
+  main .sectionPrincipalIndex h2 {
+    font-size: 3rem; }
+  main .sectionSecundariaIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 0.5rem; } }
 
 /* nosotros */
 @media (max-width: 768px) {
-  main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
-    font-size: 1rem; }
-  main .sectionPrincipalNosotros div h2 {
-    font-size: 2.25rem; }
-  main .sectionPrincipalNosotros p {
-    font-size: 1.25rem; }
-  main .sectionSecundariaNosotros h2 {
-    font-size: 2.25rem; }
-  main .sectionSecundariaNosotros p {
-    font-size: 1.25rem; } }
+  main .sectionPrincipalNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-content: none;
+    align-items: none;
+    gap: 0.5rem; }
+    main .sectionPrincipalNosotros div {
+      text-align: center; }
+      main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
+        text-align: center; }
+    main .sectionPrincipalNosotros p {
+      text-align: center; }
+    main .sectionPrincipalNosotros img {
+      width: 70%; }
+  main .sectionSecundariaNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: none;
+    align-items: none;
+    gap: 1rem; }
+    main .sectionSecundariaNosotros img {
+      display: none; }
+    main .sectionSecundariaNosotros h2 {
+      text-align: center; }
+    main .sectionSecundariaNosotros p {
+      text-align: center; } }
+
+/* carrito */
+@media (max-width: 768px) {
+  main .productoCarrito {
+    gap: 0.5rem; }
+    main .productoCarrito h2 {
+      font-size: 3.25rem; }
+    main .productoCarrito img {
+      width: 100%; }
+    main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
+      font-size: 2.15rem; } }
 
 /** 425 **/
 /*header*/
@@ -652,59 +711,34 @@ main .productoCarrito {
   main .sectionPrincipalIndex h1 {
     font-size: 4.375rem; }
   main .sectionPrincipalIndex h2 {
-    font-size: 2.8125rem; }
-  main .sectionSecundariaIndex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    gap: 0.5rem; } }
+    font-size: 2.8125rem; } }
+
+/* nosotros */
+@media (max-width: 425px) {
+  main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
+    font-size: 1rem; }
+  main .sectionPrincipalNosotros div h2 {
+    font-size: 2.25rem; }
+  main .sectionPrincipalNosotros p {
+    font-size: 1.25rem; }
+  main .sectionPrincipalNosotros img {
+    width: 100%; }
+  main .sectionSecundariaNosotros h2 {
+    font-size: 2.25rem; }
+  main .sectionSecundariaNosotros p {
+    font-size: 1.25rem; } }
 
 /* carrito */
 @media (max-width: 425px) {
   main .productoCarrito {
-    gap: 1rem;
+    gap: 0;
     margin: 0 2rem; }
     main .productoCarrito h2 {
-      font-size: 4rem; }
+      font-size: 3rem; }
     main .productoCarrito img {
       width: 100%; }
     main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
       font-size: 2rem; } }
-
-/* nosotros */
-@media (max-width: 425px) {
-  main .sectionPrincipalNosotros {
-    padding: 1rem 0 0 0;
-    margin: 0 1.5rem 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-content: none;
-    align-items: none;
-    gap: 0.5rem; }
-    main .sectionPrincipalNosotros div {
-      text-align: center; }
-      main .sectionPrincipalNosotros div h3, main .sectionPrincipalNosotros div h2 {
-        text-align: center; }
-    main .sectionPrincipalNosotros p {
-      text-align: center; }
-  main .sectionSecundariaNosotros {
-    padding: 0 0 1rem 0;
-    margin: 1rem 1.5rem 0 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: none;
-    align-items: none;
-    gap: 1rem; }
-    main .sectionSecundariaNosotros img {
-      display: none; }
-    main .sectionSecundariaNosotros h2 {
-      text-align: center; }
-    main .sectionSecundariaNosotros p {
-      text-align: center; } }
 
 /** 375 **/
 /*index*/
