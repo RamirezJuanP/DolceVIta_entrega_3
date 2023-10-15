@@ -5,17 +5,18 @@
 main{
     h2{
         @include font-Noto(500, 1.75rem, none, $color-titulo);
-        @include box-modeling(none, 0 .5rem .5rem .5rem)
+        @include box-modeling(1rem 0 0 0, 0 .5rem .5rem 1rem)
     }
     .productosCatalogo{
-        @include box-modeling(1rem 3rem 1rem 3rem, none);
+        @include box-modeling(0 2rem 0rem 2rem, none);
         @include flex(row, center, none, none, 1rem);
         div{
+            @include box-modeling(1rem, 0);
             @include flex(column, center, center, center, 1rem .3125rem);
             img{
                 width: 100%;
                 height: 35vh;
-                margin-left: .625rem;
+                border-radius: 1rem
             }
             button{
                 @include boton;
