@@ -86,6 +86,25 @@
     }
 }
 
+/* catalogo */
+@media (max-width: 425px){
+    main{
+        section{
+            h2{
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
+
+/* contactanos */
+@media (max-width: 425px){
+    main{
+        .mapa{
+            display: none;
+        }
+    }
+}
 
 /* carrito */
 @media (max-width: 425px){

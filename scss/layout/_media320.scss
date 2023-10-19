@@ -26,26 +26,6 @@
     }
 }
 
-
-/* carrito */
-@media (max-width: 320px){
-    main{
-        .productoCarrito{
-            margin: 0 1.5rem;
-            h2{
-                font-size: 3rem;
-            }
-            div{
-                article{
-                    .carritoInformacion{
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
 /* nosotros */
 @media (max-width: 320px){
     main{
@@ -68,6 +48,71 @@
             }
             p{
                 font-size: 1rem;
+            }
+        }
+    }
+}
+
+/* catalogo */
+@media (max-width: 320px){
+    main{
+        section{
+            h2{
+                font-size: 1.5rem;
+                @include box-modeling(1rem 0 0 0, 0rem .5rem 0rem 1rem);
+            }
+            .productosCatalogo{
+                div{
+                    img{
+                        height: 35vh;
+                    }
+                }
+                div{
+                    button{
+                        margin: 0 0 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* contactanos */
+@media (max-width: 425px){
+    main{
+        .formulario{
+            h2{
+                font-size: 2rem;
+            }
+            form{
+                margin-bottom: 0;
+                fieldset{
+                    legend{
+                        font-size: 1.15rem
+                    }
+                    label{
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* carrito */
+@media (max-width: 320px){
+    main{
+        .productoCarrito{
+            margin: 0 1.5rem;
+            h2{
+                font-size: 3rem;
+            }
+            div{
+                article{
+                    .carritoInformacion{
+                        font-size: 2rem;
+                    }
+                }
             }
         }
     }

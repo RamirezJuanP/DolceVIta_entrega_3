@@ -61,6 +61,36 @@
     }
 }
 
+/* catalogo */
+@media (max-width: 1440px){
+    main{
+        section{
+            h2{
+                font-size: 2.5rem;
+            }
+            .productosCatalogo{
+                gap: 0;
+            }
+        }
+    }
+}
+
+/* contactanos */
+@media (max-width: 1440px){
+    main{
+        .informacion{
+            .correo{
+                h2{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 2.25rem;
+                }
+            }
+        }
+    }
+}
+
 /* carrito */
 @media (max-width: 1440px){
     main{

@@ -14,7 +14,6 @@ main{
             fieldset{
                 border: 0px;
                 border-top: 1px solid $color-letra;
-                @include box-modeling(1.25rem, 1.25rem 3rem 0 3rem);
                 @include flex(column, none, none, flex-start, none);
                 legend{
                     @include font-Noto(500, 1.875rem, none, $color-titulo)

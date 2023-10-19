@@ -1,6 +1,6 @@
 /** 768 **/
-/*index*/
 
+/*index*/
 @media (max-width: 768px){
     main{
         .sectionPrincipalIndex{
@@ -14,7 +14,6 @@
 
         .sectionSecundariaIndex{
             @include box-modeling(none, 0 1rem);
-            grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4";
             div{
                 img{
                     height: 40vh;
@@ -68,6 +67,68 @@
             }
             p{
                 text-align: center;
+            }
+        }
+    }
+}
+
+/* catalogo */
+@media (max-width: 768px){
+    main{
+        section{
+            h2{
+                font-size: 2rem;
+            }
+            .productosCatalogo{
+                @include box-modeling(none, 0 1rem);
+                div{
+                    img{
+                        height: 40vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 535px){
+    main{
+        section{
+            .productosCatalogo{
+                @include flex(column, center, center, center, 0.5rem);
+            }
+        }
+    }
+}
+
+/* contactanos */
+@media (max-width: 768px){
+    main{
+        .formulario{
+            h2{
+                font-size: 2.8rem;
+                text-align: center;
+            }
+            form{
+                margin: 0 1rem 1rem 1rem;
+                fieldset{
+                    @include box-modeling(0 0 0 1rem, 0 1rem 1rem 1rem);
+                    legend{
+                        font-size: 1.25rem
+                    }
+                }
+            }
+        }
+        .informacion{
+            @include flex(column, center, center, center, 1.5rem);
+            @include box-modeling(0 0 1rem 0, 1rem 1rem 0 1rem);
+            .correo{
+                h2{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 1.75rem;
+                }
             }
         }
     }
