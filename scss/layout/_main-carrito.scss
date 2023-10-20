@@ -6,7 +6,7 @@ main{
     .productoCarrito{
         @include box-modeling(none, 0 5rem);
         @include grid(none, none, "h2 h2" "img informacio-carrito" "button button", center, none, center, none, 2rem);
-        h2{
+        h1{
             @include font-Noto(500, 7rem, right, $titulo-carrito);
             @include box-modeling(0 .3125rem, 0 .625rem);
             @include objGrid(h2, center, center)

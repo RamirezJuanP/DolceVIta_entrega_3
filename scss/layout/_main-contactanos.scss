@@ -5,7 +5,7 @@
 main{
     .formulario{
         @include flex(column, center, none, none, .3125rem);
-        h2{
+        h1{
             @include font-Noto(700, 3.75rem, none, $color-titulo);
             @include box-modeling(.625rem, none)
         }

@@ -240,7 +240,7 @@ main .sectionSecundariaNosotros {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 6/7fr 1/7fr;
-  grid-template-areas: "foto titulo-h2 titulo-h2" "foto p p";
+  grid-template-areas: "foto titulo-h1 titulo-h1" "foto p p";
   justify-content: none;
   align-content: none;
   justify-items: none;
@@ -253,8 +253,8 @@ main .sectionSecundariaNosotros {
     width: 60%;
     padding: none;
     margin: 0.625rem 0; }
-  main .sectionSecundariaNosotros h2 {
-    grid-area: titulo-h2;
+  main .sectionSecundariaNosotros h1 {
+    grid-area: titulo-h1;
     justify-self: end;
     align-self: center;
     font-family: 'Noto Sans', sans-serif;
@@ -284,7 +284,7 @@ main .formulario {
   align-content: none;
   align-items: none;
   gap: 0.3125rem; }
-  main .formulario h2 {
+  main .formulario h1 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 3.75rem;
@@ -467,7 +467,7 @@ main .productoCarrito {
   justify-items: center;
   align-items: none;
   gap: 2rem; }
-  main .productoCarrito h2 {
+  main .productoCarrito h1 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 500;
     font-size: 7rem;
@@ -542,7 +542,7 @@ main .productoCarrito {
     font-size: 3rem; }
   main .sectionPrincipalNosotros p {
     font-size: 1.5rem; }
-  main .sectionSecundariaNosotros h2 {
+  main .sectionSecundariaNosotros h1 {
     font-size: 3rem; }
   main .sectionSecundariaNosotros p {
     font-size: 1.5rem; } }
@@ -570,7 +570,7 @@ main .productoCarrito {
     align-content: center;
     align-items: center;
     gap: 2rem; }
-    main .productoCarrito h2 {
+    main .productoCarrito h1 {
       font-size: 5.5rem;
       text-align: center;
       justify-self: center; }
@@ -614,7 +614,7 @@ main .productoCarrito {
     margin: 0 2rem; }
     main .sectionSecundariaNosotros img {
       width: 100%; }
-    main .sectionSecundariaNosotros h2 {
+    main .sectionSecundariaNosotros h1 {
       font-size: 2.5rem; }
     main .sectionSecundariaNosotros p {
       font-size: 1.5rem; } }
@@ -638,7 +638,7 @@ main .productoCarrito {
 
 /* contactanos */
 @media (max-width: 1024px) {
-  main .formulario h2 {
+  main .formulario h1 {
     font-size: 3rem; }
   main .formulario form fieldset legend {
     font-size: 1.5rem; }
@@ -660,7 +660,7 @@ main .productoCarrito {
 @media (max-width: 1024px) {
   main .productoCarrito {
     gap: .80rem; }
-    main .productoCarrito h2 {
+    main .productoCarrito h1 {
       font-size: 4rem; }
     main .productoCarrito img {
       width: 100%; }
@@ -719,7 +719,7 @@ main .productoCarrito {
     gap: 1rem; }
     main .sectionSecundariaNosotros img {
       display: none; }
-    main .sectionSecundariaNosotros h2 {
+    main .sectionSecundariaNosotros h1 {
       text-align: center; }
     main .sectionSecundariaNosotros p {
       text-align: center; } }
@@ -745,7 +745,7 @@ main .productoCarrito {
 
 /* contactanos */
 @media (max-width: 768px) {
-  main .formulario h2 {
+  main .formulario h1 {
     font-size: 2.8rem;
     text-align: center; }
   main .formulario form {
@@ -773,7 +773,7 @@ main .productoCarrito {
 @media (max-width: 768px) {
   main .productoCarrito {
     gap: 0.5rem; }
-    main .productoCarrito h2 {
+    main .productoCarrito h1 {
       font-size: 3.25rem; }
     main .productoCarrito img {
       width: 100%; }
@@ -828,7 +828,7 @@ main .productoCarrito {
     font-size: 1.25rem; }
   main .sectionPrincipalNosotros img {
     width: 100%; }
-  main .sectionSecundariaNosotros h2 {
+  main .sectionSecundariaNosotros h1 {
     font-size: 2.25rem; }
   main .sectionSecundariaNosotros p {
     font-size: 1.25rem; } }
@@ -848,7 +848,7 @@ main .productoCarrito {
   main .productoCarrito {
     gap: 0;
     margin: 0 2rem; }
-    main .productoCarrito h2 {
+    main .productoCarrito h1 {
       font-size: 3rem; }
     main .productoCarrito img {
       width: 100%; }
@@ -893,7 +893,7 @@ main .productoCarrito {
 
 /* carrito */
 @media (max-width: 375px) {
-  main .productoCarrito h2 {
+  main .productoCarrito h1 {
     font-size: 3rem; } }
 
 /** 320 **/
@@ -916,7 +916,7 @@ main .productoCarrito {
     font-size: 1.80rem; }
   main .sectionPrincipalNosotros p {
     font-size: 1rem; }
-  main .sectionSecundariaNosotros h2 {
+  main .sectionSecundariaNosotros h1 {
     font-size: 1.80rem; }
   main .sectionSecundariaNosotros p {
     font-size: 1rem; } }
@@ -934,7 +934,7 @@ main .productoCarrito {
 
 /* contactanos */
 @media (max-width: 425px) {
-  main .formulario h2 {
+  main .formulario h1 {
     font-size: 2rem; }
   main .formulario form {
     margin-bottom: 0; }
@@ -947,7 +947,7 @@ main .productoCarrito {
 @media (max-width: 320px) {
   main .productoCarrito {
     margin: 0 1.5rem; }
-    main .productoCarrito h2 {
+    main .productoCarrito h1 {
       font-size: 3rem; }
     main .productoCarrito div article .carritoInformacion, main .productoCarrito div article .carritoPrecio {
       font-size: 2rem; } }

@@ -32,14 +32,14 @@ main{
     }
     .sectionSecundariaNosotros{
         @include box-modeling (0 0 2rem 0, 2rem 5rem 0 5rem);
-        @include grid(1fr 1fr 1fr, 6/7fr 1/7fr, "foto titulo-h2 titulo-h2" "foto p p", none, none, none, none, 0rem .625rem);
+        @include grid(1fr 1fr 1fr, 6/7fr 1/7fr, "foto titulo-h1 titulo-h1" "foto p p", none, none, none, none, 0rem .625rem);
         img{
             @include objGrid(foto, center, center);
             width: 60%;
             @include box-modeling(none, .625rem 0)
         }
-        h2{
-            @include objGrid(titulo-h2, end, center);
+        h1{
+            @include objGrid(titulo-h1, end, center);
             @include font-Noto(700, 3.125rem, right, $color-titulo);
             @include box-modeling(0 .625rem, 0 .625rem 0 0)
         }

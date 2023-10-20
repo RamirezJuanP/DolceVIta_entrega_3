@@ -51,7 +51,7 @@
             }
         }
         .sectionSecundariaNosotros{
-            h2{
+            h1{
                 font-size: 3rem;
             }
             p{
@@ -96,7 +96,7 @@
     main{
         .productoCarrito{
             @include flex(column, center, center, center, 2rem);
-            h2{
+            h1{
                 font-size: 5.5rem;
                 text-align: center;
                 justify-self: center;
