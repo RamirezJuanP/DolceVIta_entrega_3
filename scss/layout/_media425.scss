@@ -89,6 +89,14 @@
 /* catalogo */
 @media (max-width: 425px){
     main{
+        .titulo{
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+        }
         section{
             h2{
                 font-size: 1.75rem;

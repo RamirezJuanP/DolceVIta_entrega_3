@@ -83,7 +83,7 @@
                 @include box-modeling(none, 0 1rem);
                 div{
                     img{
-                        height: 40vh;
+                        height: 100%;/*40vh*/
                     }
                 }
             }

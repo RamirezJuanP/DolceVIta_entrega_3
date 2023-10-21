@@ -84,6 +84,15 @@
 /* catalogo */
 @media (max-width: 1024px){
     main{
+        .titulo{
+            h1{
+                font-size: 3rem;
+                margin-bottom: 1.25rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
         section{
             .productosCatalogo{
                 grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4";

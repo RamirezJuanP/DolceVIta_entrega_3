@@ -56,6 +56,11 @@
 /* catalogo */
 @media (max-width: 320px){
     main{
+        .titulo{
+            h1{
+                margin: 1rem .5rem;
+            }
+        }
         section{
             h2{
                 font-size: 1.5rem;

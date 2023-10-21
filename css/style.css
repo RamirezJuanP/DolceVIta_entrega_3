@@ -390,6 +390,30 @@ main .informacion {
       margin: 2rem; }
 
 /**Main Catalogo **/
+main .titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: none;
+  align-items: none;
+  gap: 0rem; }
+  main .titulo h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: #D70D6E;
+    padding: 0.3rem;
+    margin: 1rem 1rem 2rem 1rem; }
+  main .titulo p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    text-align: center;
+    color: #000000;
+    padding: none;
+    margin: 1rem 1rem 3rem 1rem; }
+
 main section h2 {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
@@ -413,7 +437,8 @@ main section .productosCatalogo {
   gap: 0 2rem; }
   main section .productosCatalogo div img {
     width: 100%;
-    height: 40vh;
+    height: 100%;
+    /*45vh*/
     padding: 1rem;
     margin: 0;
     /*height: 35vh;*/
@@ -549,6 +574,10 @@ main .productoCarrito {
 
 /* catalogo */
 @media (max-width: 1440px) {
+  main .titulo h1 {
+    font-size: 3.5rem; }
+  main .titulo p {
+    font-size: 1.55rem; }
   main section h2 {
     font-size: 2.5rem; }
   main section .productosCatalogo {
@@ -631,6 +660,11 @@ main .productoCarrito {
 
 /* catalogo */
 @media (max-width: 1024px) {
+  main .titulo h1 {
+    font-size: 3rem;
+    margin-bottom: 1.25rem; }
+  main .titulo p {
+    font-size: 1.5rem; }
   main section .productosCatalogo {
     grid-template-areas: "img-1 img-2" "boton-1 boton-2" "img-3 img-4" "boton-3 boton-4"; }
     main section .productosCatalogo div img {
@@ -732,7 +766,8 @@ main .productoCarrito {
     padding: none;
     margin: 0 1rem; }
     main section .productosCatalogo div img {
-      height: 40vh; } }
+      height: 100%;
+      /*40vh*/ } }
 
 @media (max-width: 535px) {
   main section .productosCatalogo {
@@ -835,6 +870,10 @@ main .productoCarrito {
 
 /* catalogo */
 @media (max-width: 425px) {
+  main .titulo h1 {
+    font-size: 2rem; }
+  main .titulo p {
+    font-size: 1.25rem; }
   main section h2 {
     font-size: 1.75rem; } }
 
@@ -923,6 +962,8 @@ main .productoCarrito {
 
 /* catalogo */
 @media (max-width: 320px) {
+  main .titulo h1 {
+    margin: 1rem .5rem; }
   main section h2 {
     font-size: 1.5rem;
     padding: 1rem 0 0 0;
